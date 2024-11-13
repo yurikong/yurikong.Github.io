@@ -1,15 +1,16 @@
 ---
 import HeadIcons from "~components/HeadIcons.astro"
 import HeadMetaEn from "~components/en/HeadMeta.astro"
-
-const redirectMessage: string = "redirecting..."
 ---
 
 <html lang="en">
-  <title>{redirectMessage}</title>
+  <title>redirecting...跳转中...</title>
   <HeadMetaEn />
   <HeadIcons />
-  <body>{redirectMessage}</body>
+  <body>
+    <div>redirecting...</div>
+    <div>跳转中...</div>
+  </body>
 </html>
 
 <script>
