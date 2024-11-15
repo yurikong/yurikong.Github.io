@@ -5,7 +5,7 @@ export const socials: ISocial[] = [
   {
     name: "Portfolio",
     iconClassName: "i-ri:earth-line",
-    url: "https://yurikong.github.io",
+    url: "https://yurikong.netlify.app",
   },
   {
     name: "Github",

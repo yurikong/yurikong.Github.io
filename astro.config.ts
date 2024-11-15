@@ -9,7 +9,7 @@ export default defineConfig({
     prefetchAll: true,
     defaultStrategy: "viewport",
   },
-  site: "https://yurikong.github.io",
+  site: "https://yurikong.netlify.app",
   base: "/",
   server: {
     open: true,
