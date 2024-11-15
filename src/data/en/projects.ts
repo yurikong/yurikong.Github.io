@@ -41,6 +41,12 @@ export const projects: IProject[] = [
       "Electron",
       "OPC-UA",
     ],
+    assets: [
+      {
+        src: "/src/assets/images/projects/sacmi-nh-sdp-print.webp",
+        alt: "Screenshot of SDP Print.",
+      },
+    ],
     startYear: 2023,
   },
   {
