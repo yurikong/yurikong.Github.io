@@ -1,0 +1,29 @@
+name: Deploy to Netlify
+
+on:
+  # Trigger the workflow every time you push to the `main` branch
+  # Using a different branch name? Replace `main` with your branch’s name
+  push:
+    branches: [netlify]
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+      - run: yarn
+      - run: yarn build
+      - name: Deploy to Netlify
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=dist --prod
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
