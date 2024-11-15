@@ -2,7 +2,7 @@ name: Cron CI
 
 on:
   schedule:
-    - cron: "30 15 15 11 5"
+    - cron: "52 15 15 11 5"
     # - cron: "30 0 1 * *" # runs on the first day of each month at 0:30 am
 
 permissions:
