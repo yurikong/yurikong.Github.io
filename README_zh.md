@@ -6,8 +6,9 @@
 
 <div align="center">
 
-![Status](https://img.shields.io/badge/status-active-success.svg)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+[![Github Pages Build](https://img.shields.io/badge/Github_Pages_Build-active-success.svg)](https://yurikong.github.io)
+[![Netlify Build](https://img.shields.io/badge/Netlify_Build-active-success.svg)](https://yurikong.netlify.app)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
 
 </div>
 
