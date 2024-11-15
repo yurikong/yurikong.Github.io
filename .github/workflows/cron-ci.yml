@@ -2,8 +2,8 @@ name: Cron CI
 
 on:
   schedule:
-    - cron: "52 15 15 11 5"
-    # - cron: "30 0 1 * *" # runs on the first day of each month at 0:30 am
+    - cron: "30 4 1 * *" # runs on the first day of each month at 4:30 am
+  workflow_dispatch:
 
 permissions:
   contents: read
