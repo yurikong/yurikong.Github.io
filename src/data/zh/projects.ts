@@ -65,6 +65,9 @@ export const projects: IProject[] = [
         alt: "第二张SDP瓷砖对位软件项目截图",
       },
     ],
+    copyrightCertificate: {
+      url: "/software-copyright-sacmi-sdp-print-image-rotation.pdf",
+    },
     startYear: 2024,
     endYear: 2024,
   },
