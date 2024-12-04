@@ -7,7 +7,8 @@ import Tag from "~components/Tag.astro"
 import LocaleImageViewer from "~components/LocaleImageViewer.astro"
 
 interface Props extends IProject {}
-const { name, description, technologiesUsed, assets, link, repository, startYear, endYear } = Astro.props
+const { name, description, technologiesUsed, assets, link, repository, copyrightCertificate, startYear, endYear } =
+  Astro.props
 const url: string | undefined = link?.url ?? repository?.url
 const highlights: IProjectHighlight[] = []
 if (!!repository) {
@@ -86,6 +87,28 @@ const selectedHighlights: IProjectHighlight[] = highlights.filter((it) => it.val
             </li>
           ))}
         </ul>
+      )
+    }
+
+    <!-- Copyright Certificate -->
+    {
+      !!copyrightCertificate && (
+        <AppLink
+          class:list={[
+            "block",
+            "font-semibold",
+            "text-sm",
+            "mt-4",
+            "capitalize",
+            "text-gray-800",
+            "dark:text-gray-300",
+          ]}
+          url={copyrightCertificate.url}
+          showSuffixIcon
+          forceExternal
+        >
+          查看软件著作权证书
+        </AppLink>
       )
     }
 
