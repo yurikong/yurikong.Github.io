@@ -10,6 +10,7 @@ export interface IProject extends IExperience {
   assets?: IProjectAsset[] | undefined
   link?: IProjectLink | undefined
   repository?: GithubRepository | undefined
+  copyrightCertificate?: ICopyrightCertificateLink | undefined
 }
 
 export interface IProjectAsset {
@@ -27,4 +28,8 @@ export interface IProjectHighlight {
   name: string
   iconClassName: string
   value: number
+}
+
+export interface ICopyrightCertificateLink {
+  url: string
 }

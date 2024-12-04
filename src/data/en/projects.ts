@@ -66,6 +66,9 @@ export const projects: IProject[] = [
         alt: "Screenshot 2 of SDP Print - Image Rotation.",
       },
     ],
+    copyrightCertificate: {
+      url: "/software-copyright-sacmi-sdp-print-image-rotation.pdf",
+    },
     startYear: 2024,
     endYear: 2024,
   },
